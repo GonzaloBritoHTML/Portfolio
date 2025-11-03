@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
             "./Img/JANSSEN4.jpg"
         ],
         3: [
-            "./Img/ISES5.jpg",
-            "./Img/ISES6.jpg",
-            "./Img/ISES7.jpg",
-            "./Img/ISES8.jpg"
+            "./Img/ISES1.jpg",
+            "./Img/ISES2.jpg",
+            "./Img/ISES3.jpg",
+            "./Img/ISES4.jpg"
         ]
     };
 
