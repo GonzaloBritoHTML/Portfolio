@@ -1,0 +1,637 @@
+body {
+    margin: 0;
+    background-color: #0f111a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Inicio header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    background-color: #1e2a45;
+}
+
+.div_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.div_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2px;
+    gap: 30px;
+    width: 80%;
+}
+
+.nav1 {
+    color: #00bcd4;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: #1e2a45;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    transition: 
+        content 0.4s ease,
+        position 0.4s ease,
+        height 0.4s ease,
+        width 0.4s ease,
+        top 0.4s ease,
+        left 0.4s ease,
+        right 0.4s ease,
+        bottom 0.4s ease,
+        border-radius 0.4s ease,
+        border-top 0.4s ease,
+        border-left 0.4s ease,
+        border-right 0.4s ease,
+        border-bottom 0.4s ease,
+        background 0.4s ease,
+        opacity 0.4s ease,
+        color 0.4s ease,
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-top-right-radius 0.4s ease,
+        border-bottom-left-radius 0.4s ease,
+        z-index 0.4s ease;
+}
+
+/* Gradiente animado de fondo al hacer hover */
+.nav1::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #1e2a45, #2a93a6, #304a60);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+}
+
+/* Bordes decorativos */
+.nav1::after,
+.nav1::marker {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.nav1::after {
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid #00bcd4;
+    border-left: 3px solid #00bcd4;
+}
+
+.nav1::marker {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 3px solid #00bcd4;
+    border-right: 3px solid #00bcd4;
+}
+
+/* Hover principal */
+.nav1:hover {
+    color: #e0f7fa;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 4px 12px rgba(42, 147, 166, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Mostrar el gradiente al hacer hover */
+.nav1:hover::before {
+    opacity: 1;
+}
+
+/* Expandir los bordes en hover */
+.nav1:hover::after,
+.nav1:hover::marker {
+    width: 100%;
+    height: 100%;
+}
+
+/* Clic: efecto de presión */
+.nav1:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(42, 147, 166, 0.15);
+}
+
+.div_gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.gif {
+    width: 100%;
+}
+
+/* Fin header */
+
+/* Inicio footer */
+    footer {
+        float: left;
+        text-align: center;
+        width: 100%;
+        background-color: #1e2a45;
+        color: #e0e0e0;
+        padding: 10px 0;
+    }
+/* Fin footer */
+
+/* --------------------------------- Fin - Éstilos generales */
+
+/* Inicio main */
+
+/* ----------------- Inicio - Main del index/presentación */
+
+.pfp {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#main_presentacion.html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.main_presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+}
+
+.main_index {
+    float: left;
+    width: 45%;
+    padding-left: 38px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.aside_index {
+    float: left;
+    width: 50%;
+    height: auto;
+    background-color: #1c1f2b;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main_practica_img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    gap: 30px;
+}
+
+.main_buttons_img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.button_practica_img{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-bottom: 0px;
+    width: 100px;
+    transition: 
+        transform 0.5s ease,
+        border-bottom 0.5s ease,
+        width 0.5s ease,
+        color 0.5s ease;
+}
+
+.button_practica_img:hover {
+    transform: scale(1.5);
+    border-bottom: 2px dotted #26c6da;
+    width: 120px;
+    color: #26c6da;
+}
+
+.img_practicas{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transform: scale(0.9);
+    transition: 
+        transform 0.5s ease,
+        opacity 0.5s ease,
+        height 0.5s ease,
+        width 0.5s ease;
+}
+
+.img_practicas:hover {
+    transform: scale(1.05)
+}
+
+.fade {
+    opacity: 0.6;
+    transform: scale(0.5);
+    height: 50px;
+    width: 100px;
+}
+
+.h2_index {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #00bcd4;
+}
+
+.p_index {
+    font-size: large;
+}
+
+/* ----------------- Fin - Main del index/presentación */
+
+/* ----------------- Inicio - Main de las materias cursadas */
+
+.main_lista {
+    margin: 36px 50px;
+    background-color: #1e2a45;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 188, 212, 0.12);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 25px;
+    color: #e0e0e0;
+    animation: fadeInUp 0.8s ease;
+}
+
+.h2_lista {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(
+        120deg,
+        #00bcd4 0%,
+        #2a93a6 30%,
+        #e0f7fa 50%,
+        #2a93a6 70%,
+        #00bcd4 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animatedGradient 4s linear infinite;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
+}
+.div_listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.IHATETHIS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.col_lista {
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.lista_materias_cursadas {
+    background-color: rgba(28, 31, 43, 0.85);
+    padding: 16px 24px;
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.08);
+    list-style: none;
+    font-size: 16px;
+    color: #e0f7fa;
+    border: 1px solid #2a93a6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lista_materias_cursadas li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.lista_materias_cursadas li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-size: 12px;
+}
+
+.lista_materias_cursando {
+    background-color: rgba(28, 31, 43, 0.85);
+    padding: 16px 24px;
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.08);
+    list-style: none;
+    font-size: 16px;
+    color: #e0f7fa;
+    border: 1px solid #2a93a6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+}
+
+.lista_materias_cursando li {
+    margin: 8px 0;
+    opacity: 50%;
+    position: relative;
+    padding-left: 20px;
+}
+
+.lista_materias_cursando li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-size: 12px;
+}
+/* ----------------- Fin - Main de las materias cursadas */
+
+/* ----------------- Inicio - Main de las unidades desarrolladas */
+
+details {
+    background-color: #1c1f2b;
+    border: 1px solid #00bcd4;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+details[open] {
+    background-color: #263149;
+}
+
+summary {
+    font-weight: bold;
+    font-size: large;
+    list-style: none;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+    color: #00bcd4;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary:hover {
+    color: #00bcd4;
+}
+
+.trabajo1,
+.trabajo2,
+.trabajo3,
+.trabajo4,
+.trabajo5 {
+    position: relative;
+    display: block;
+    padding: 10px 16px;
+    margin: 6px 0;
+    text-decoration: none;
+    border-left: 4px solid;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Bordes animados ocultos por defecto */
+.trabajo1::before,
+.trabajo1::after,
+.trabajo2::before,
+.trabajo2::after,
+.trabajo3::before,
+.trabajo3::after,
+.trabajo4::before,
+.trabajo4::after,
+.trabajo5::before,
+.trabajo5::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+/* Esquinas: arriba-izquierda y abajo-derecha */
+.trabajo1::after,
+.trabajo2::after,
+.trabajo3::after,
+.trabajo4::after,
+.trabajo5::after {
+    top: 0;
+    left: 0;
+}
+
+.trabajo1::before,
+.trabajo2::before,
+.trabajo3::before,
+.trabajo4::before,
+.trabajo5::before {
+    bottom: 0;
+    right: 0;
+}
+
+/* Hover: los bordes se expanden */
+.trabajo1:hover::before,
+.trabajo1:hover::after,
+.trabajo2:hover::before,
+.trabajo2:hover::after,
+.trabajo3:hover::before,
+.trabajo3:hover::after,
+.trabajo4:hover::before,
+.trabajo4:hover::after,
+.trabajo5:hover::before,
+.trabajo5:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+/* Personalización de color por trabajo */
+.trabajo1 {
+    background-color: #1a273a;
+    color: #00bcd4;
+    border-left-color: #00bcd4;
+}
+.trabajo1::after {
+    border-top: 3px solid #00bcd4;
+    border-left: 3px solid #00bcd4;
+}
+.trabajo1::before {
+    border-bottom: 3px solid #00bcd4;
+    border-right: 3px solid #00bcd4;
+}
+.trabajo1:hover {
+    background-color: #223552;
+}
+
+.trabajo2 {
+    background-color: #1c2b3f;
+    color: #b2ebf2;
+    border-left-color: #b2ebf2;
+}
+.trabajo2::after {
+    border-top: 3px solid #b2ebf2;
+    border-left: 3px solid #b2ebf2;
+}
+.trabajo2::before {
+    border-bottom: 3px solid #b2ebf2;
+    border-right: 3px solid #b2ebf2;
+}
+.trabajo2:hover {
+    background-color: #2a3c56;
+}
+
+.trabajo3 {
+    background-color: #1e3147;
+    color: #4dd0e1;
+    border-left-color: #4dd0e1;
+}
+.trabajo3::after {
+    border-top: 3px solid #4dd0e1;
+    border-left: 3px solid #4dd0e1;
+}
+.trabajo3::before {
+    border-bottom: 3px solid #4dd0e1;
+    border-right: 3px solid #4dd0e1;
+}
+.trabajo3:hover {
+    background-color: #30445f;
+}
+
+.trabajo4 {
+    background-color: #202c3f;
+    color: #80deea;
+    border-left-color: #80deea;
+}
+.trabajo4::after {
+    border-top: 3px solid #80deea;
+    border-left: 3px solid #80deea;
+}
+.trabajo4::before {
+    border-bottom: 3px solid #80deea;
+    border-right: 3px solid #80deea;
+}
+.trabajo4:hover {
+    background-color: #34485d;
+}
+
+.trabajo5 {
+    background-color: #223349;
+    color: #26c6da;
+    border-left-color: #26c6da;
+}
+.trabajo5::after {
+    border-top: 3px solid #26c6da;
+    border-left: 3px solid #26c6da;
+}
+.trabajo5::before {
+    border-bottom: 3px solid #26c6da;
+    border-right: 3px solid #26c6da;
+}
+.trabajo5:hover {
+    background-color: #2e4b65;
+}
+
+/* ----------------- Fin - Main de las unidades desarrolladas */
+
+/* Fin main */
+

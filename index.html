@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="./css/cartas.css">
+</head>
+<body>
+    <div class="background-wrapper">
+        <div class="background-bus">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <!-- Buses con diagonales -->
+                <path class="bus-line" d="M5 0 V25 L15 35 V100" />
+                <path class="bus-line" d="M20 0 V40 H30 L40 50 V100" />
+                <path class="bus-line" d="M40 0 V15 L45 25 H50 V60 H60 V100" />
+                <path class="bus-line" d="M65 0 V30 L70 35 L80 60 V100" />
+                <path class="bus-line" d="M85 0 V50 H90 V100" />
+
+                <!-- Animaciones de datos -->
+                <circle class="data-bit" r="0.8">
+                    <animateMotion dur="4s" repeatCount="indefinite" path="M5 0 V25 L15 35 V100" />
+                </circle>
+                <circle class="data-bit" r="0.8">
+                    <animateMotion dur="5s" repeatCount="indefinite" path="M20 0 V40 H30 L40 50 V100" />
+                </circle>
+                <circle class="data-bit" r="0.8">
+                    <animateMotion dur="6s" repeatCount="indefinite" path="M40 0 V15 L45 25 H50 V60 H60 V100" />
+                </circle>
+                <circle class="data-bit" r="0.8">
+                    <animateMotion dur="4.5s" repeatCount="indefinite" path="M65 0 V30 L70 35 L80 60 V100" />
+                </circle>
+                <circle class="data-bit" r="0.8">
+                    <animateMotion dur="5.5s" repeatCount="indefinite" path="M85 0 V50 H90 V100" />
+                </circle>
+            </svg>
+        </div>
+    </div>
+
+    <div class="header_intro">
+        <h1 class="h1_intro">¡Veamos esto!</h1>
+    </div>
+    
+    <div class="nav_intro">
+        <a href="./presentacion.html" class="cartas" id="c0">
+            <div class="img_cartas">
+                <img class="imgs" src="https://images.pexels.com/photos/2274517/pexels-photo-2274517.png?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+                <div class="info_cartas">
+                <h2 class="h2_intro">Presentación</h2>
+                <p>Conoce mi trayectoria académica, intereses y motivaciones en el Profesorado en Informática.</p>
+            </div>
+        </a>
+        <a href="./materias.html" class="cartas" id="c1">
+            <div class="img_cartas">
+                <img class="imgs" src="https://images.pexels.com/photos/8297361/pexels-photo-8297361.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <div class="info_cartas">
+                <h2 class="h2_intro">Materias</h2>
+                <p>Listado completo de las asignaturas de los tres años de la carrera, organizadas para una fácil consulta.</p>
+            </div>
+        </a>
+        <a href="./unidades.html" class="cartas" id="c2">
+            <div class="img_cartas">
+                <img class="imgs" src="https://images.pexels.com/photos/5427815/pexels-photo-5427815.jpeg?auto=compress&cs=tinysrgb&w=600 alt="">
+            </div>
+            <div class="info_cartas">
+                <h2 class="h2_intro">Unidades desarrolladas</h2>
+                <p>Explora los trabajos prácticos y proyectos que he realizado, con enlaces a cada documento.</p>
+            </div>
+        </a>
+    </div>
+    <div class="footer_intro">
+        <p id="anim_flecha1" style="font-weight:900;"><<<</p>
+        <p>¡Haz click en la carta!</p>
+        <p id="anim_flecha2" style="font-weight:900;">>>></p>
+    </div>
+</body>
+</html>
